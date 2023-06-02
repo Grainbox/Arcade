@@ -1,0 +1,10 @@
+<map id="include/IGames.hpp" name="include/IGames.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="254,5,405,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,85,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="109,79,176,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="201,79,271,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="296,79,363,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="387,79,450,104"/>
+<area shape="rect" id="node7" title=" " alt="" coords="474,79,558,104"/>
+<area shape="rect" id="node8" href="$events_8hpp.html" title="Ce fichier contient les définitions des différents events reçus par les librairies graphiques." alt="" coords="582,79,677,104"/>
+</map>

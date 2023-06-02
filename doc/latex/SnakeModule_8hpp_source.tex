@@ -1,0 +1,64 @@
+\hypertarget{SnakeModule_8hpp_source}{}\doxysection{Snake\+Module.\+hpp}
+\label{SnakeModule_8hpp_source}\index{include/Modules/Games/SnakeModule.hpp@{include/Modules/Games/SnakeModule.hpp}}
+\mbox{\hyperlink{SnakeModule_8hpp}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/REN-\/4-\/1-\/arcade-\/hugo1.fontaine}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SnakeModule}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ SNAKEMODULE\_HPP\_}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ SNAKEMODULE\_HPP\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ <\mbox{\hyperlink{Games_8hpp}{Games.hpp}}>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSnakeModule}{SnakeModule}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classGames}{Games}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSnakeModule_a3f4eb48d1a95f5acf61ac715376b8c1c}{SnakeModule}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSnakeModule_a55dc266cf6e7ce0185175ee350efb7d6}{\string~SnakeModule}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeModule_a1c76029e663a2a564a07fd91b1da567d}{eventHandler}}(\textcolor{keywordtype}{int}\ event);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::vector<std::string>\ \mbox{\hyperlink{classSnakeModule_a9c8163529c02b205817b212966a97594}{getFrame}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeModule_a1e8285452255b8a1efed1de52ad52a1a}{snakeGrow}}()\ \{\ this-\/>\_snakeSize\ +=\ 1;\ \};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSnakeModule_a91fd50ef5bd38ae2cca4b4b988f6fc16}{getSnakeSize}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_snakeSize;\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classSnakeModule_a75f5b5a41c14cf4db48d1180d32bfd01}{findHeadPos}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classSnakeModule_afc554ee4661fffd68e080574c0c6971e}{getHeadPos}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_headPos;\ \};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeModule_a52d681f8739eca674322e2cdaa1d8a06}{setHeadPos}}(std::vector<int>\ new\_pos)\ \{\ this-\/>\_headPos\ =\ new\_pos;\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ int\ getScore()\ const\ \{\ return\ this-\/>\_score;\ \};}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ void\ setScore(int\ new\_score)\ \{\ this-\/>\_score\ =\ new\_score;\ \};}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeModule_abd2adfcf12c5e15bcc074002b722d918}{updatePos}}(\textcolor{keywordtype}{int}\ event);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeModule_aca2395df0ae7aef31c0bece8837d8595}{setTail}}(std::vector<int>\ headPos);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeModule_abe0e82e61ee85e40f1961af48ed1edb4}{updateTail}}(std::vector<int>\ oldHeadPos);\ \textcolor{comment}{//\ à\ appeler\ après\ updatePos().}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSnakeModule_a3fd049ed65989809f61c8c20983d03c1}{directOK}}(\textcolor{keywordtype}{int}\ event)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSnakeModule_a810d86d43c203d59af50467773377c97}{getDirection}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>\_direction;\ \};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSnakeModule_adc4ce5be933f7c964f416ff77aa68cd3}{setDirection}}(\textcolor{keywordtype}{int}\ new\_direct)\ \{\ this-\/>\_direction\ =\ new\_direct;\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_snakeSize;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ int\ \_score;}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_direction;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ std::vector<int>\ \_headPos;\ \textcolor{comment}{//\ [1]line\ [2]col}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::vector<std::vector<int>>\ \_tail;}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInvalidMap}{InvalidMap}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00054\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{classInvalidMap_a7b104af7d18be55de3d1de8ad1a7e896}{InvalidMap}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{classInvalidMap_a29142d26ea131cdf306023be1ac7ceec}{\string~InvalidMap}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classInvalidMap_a966aa195f62850133b4ad87eab7389aa}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00059\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Map\ is\ invalid"{}};}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

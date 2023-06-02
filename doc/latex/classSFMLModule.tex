@@ -1,0 +1,229 @@
+\hypertarget{classSFMLModule}{}\doxysection{Référence de la classe SFMLModule}
+\label{classSFMLModule}\index{SFMLModule@{SFMLModule}}
+
+
+{\ttfamily \#include $<$SFMLModule.\+hpp$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de SFMLModule\+:
+% FIG 0
+
+
+Graphe de collaboration de SFMLModule\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSFMLModule_a6beecca2c0d6f3160d74f90a918ca011}{SFMLModule}} ()
+\item 
+\mbox{\hyperlink{classSFMLModule_a0f9f01358a9e3f909d6ba59f35f4587f}{$\sim$\+SFMLModule}} ()
+\item 
+void \mbox{\hyperlink{classSFMLModule_a01bf6747e7438baaf7848edb68a5d4a2}{display}} (std\+::vector$<$ std\+::string $>$ frame)
+\item 
+int \mbox{\hyperlink{classSFMLModule_a6e80ceb109501958f70b2b3abf5667a8}{get\+Event}} ()
+\item 
+void \mbox{\hyperlink{classSFMLModule_a00d7787bda0d71d9422e55cecb6c6d34}{init\+Rectangle}} ()
+\item 
+std\+::vector$<$ sf\+::\+Rectangle\+Shape $>$ \mbox{\hyperlink{classSFMLModule_abd8f935b2c449c20919445ab90813daa}{get\+Rectangle}} ()
+\item 
+void \mbox{\hyperlink{classSFMLModule_ac931ea737fd4471e5e53085f5a3e924e}{key\+\_\+handler}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{classSFMLModule_a9d4b469492db3a6e8a6a90c1f2398608}{\+\_\+window}})
+\item 
+void \mbox{\hyperlink{classSFMLModule_ae7bb1e91595d160b931304183748d1de}{set\+Stat}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classGraphics}{Graphics}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGraphics_ae26714d485d834cdccc8d87aab7ddf59}{$\sim$\+Graphics}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classGraphics_a32fb1a496cf23cf6f45609718c5d299c}{display}} (std\+::vector$<$ std\+::string $>$ frame)=0
+\item 
+virtual int \mbox{\hyperlink{classGraphics_aa08ffbfb3bfccb355446f3203d449456}{get\+Event}} ()=0
+\item 
+std\+::string \mbox{\hyperlink{classGraphics_a4ecf4a382e0ff6f5d86b95efdb9af0ac}{get\+Game\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGraphics_a514f98cf161f8d5698fadd0c5c00f918}{get\+Lib\+Name}} () const
+\item 
+void \mbox{\hyperlink{classGraphics_ae1a6c5ce7d367a908936e5cfc3eb7b59}{set\+Game\+Name}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{classGraphics_a5c1ceb143ec8a89293afd1561ee1c9c3}{set\+Lib\+Name}} (std\+::string name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classIGraphics}{IGraphics}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIGraphics_aa267c162c258cd02bac6692c43645657}{$\sim$\+IGraphics}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classIGraphics_ae38528555acb87085144e9b27d154cf8}{display}} (std\+::vector$<$ std\+::string $>$ frame)=0
+\item 
+virtual int \mbox{\hyperlink{classIGraphics_aedb2667f2f41530113957f758c2e5f9d}{get\+Event}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIGraphics_a518da08bf862f7f4ccc15d716313e9f7}{get\+Game\+Name}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIGraphics_a7323891f99491df152d53827952cba5c}{get\+Lib\+Name}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIGraphics_a7a9e955878c0fd9e06f50515e1b0e5e1}{set\+Game\+Name}} (std\+::string name)=0
+\item 
+virtual void \mbox{\hyperlink{classIGraphics_ad42f092c834a26cd40102898ea8913de}{set\+Lib\+Name}} (std\+::string name)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSFMLModule_aee48db3d24ac3ba7e42c39c191a66743}{wall}} = 0
+\item 
+int \mbox{\hyperlink{classSFMLModule_a7e9c177f0f58516bf1f5ae1e1401df7e}{player}} = 0
+\item 
+int \mbox{\hyperlink{classSFMLModule_ab859c47a34f52baddaff31bf235ee68f}{Door}} = 0
+\item 
+int \mbox{\hyperlink{classSFMLModule_a24e4701f75c78dd850210872b5dfb19c}{Portail}} = 0
+\item 
+int \mbox{\hyperlink{classSFMLModule_aaca3335ef5dec0b907aa5d2ade32f383}{Ghost}} = 0
+\item 
+int \mbox{\hyperlink{classSFMLModule_acff27b4c16c9659ed8cb89374d421285}{point}} = 0
+\item 
+int \mbox{\hyperlink{classSFMLModule_ad4d7f6f50f7f75f92b63385d8e784140}{Big\+Point}} = 0
+\item 
+int \mbox{\hyperlink{classSFMLModule_a7a80d4e64bd3f1f389ab5211e318a7fe}{Fruit}} = 0
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{classSFMLModule_a9d4b469492db3a6e8a6a90c1f2398608}{\+\_\+window}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classSFMLModule_a6beecca2c0d6f3160d74f90a918ca011}\label{classSFMLModule_a6beecca2c0d6f3160d74f90a918ca011}} 
+\index{SFMLModule@{SFMLModule}!SFMLModule@{SFMLModule}}
+\index{SFMLModule@{SFMLModule}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{SFMLModule()}{SFMLModule()}}
+{\footnotesize\ttfamily SFMLModule\+::\+SFMLModule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSFMLModule_a0f9f01358a9e3f909d6ba59f35f4587f}\label{classSFMLModule_a0f9f01358a9e3f909d6ba59f35f4587f}} 
+\index{SFMLModule@{SFMLModule}!````~SFMLModule@{$\sim$SFMLModule}}
+\index{````~SFMLModule@{$\sim$SFMLModule}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$SFMLModule()}{~SFMLModule()}}
+{\footnotesize\ttfamily SFMLModule\+::$\sim$\+SFMLModule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classSFMLModule_a01bf6747e7438baaf7848edb68a5d4a2}\label{classSFMLModule_a01bf6747e7438baaf7848edb68a5d4a2}} 
+\index{SFMLModule@{SFMLModule}!display@{display}}
+\index{display@{display}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void SFMLModule\+::display (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+S\textquotesingle{}occupe d\textquotesingle{}interpréter la frame reçue depuis \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{IGames\+::get\+Frame()}} et de l\textquotesingle{}afficher correctement 
+\begin{DoxyParams}{Paramètres}
+{\em frame} & La frame envoyée par \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{IGames\+::get\+Frame()}} \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \mbox{\hyperlink{classGraphics_a32fb1a496cf23cf6f45609718c5d299c}{Graphics}}.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 2
+\mbox{\Hypertarget{classSFMLModule_a6e80ceb109501958f70b2b3abf5667a8}\label{classSFMLModule_a6e80ceb109501958f70b2b3abf5667a8}} 
+\index{SFMLModule@{SFMLModule}!getEvent@{getEvent}}
+\index{getEvent@{getEvent}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{getEvent()}{getEvent()}}
+{\footnotesize\ttfamily int SFMLModule\+::get\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Interprète l\textquotesingle{}évenement du joueur et le retourne avec la table dans \mbox{\hyperlink{events_8hpp}{events.\+hpp}} 
+\begin{DoxyParams}{Paramètres}
+{\em frame} & La frame envoyée par \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{IGames\+::get\+Frame()}} \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \mbox{\hyperlink{classGraphics_aa08ffbfb3bfccb355446f3203d449456}{Graphics}}.
+
+\mbox{\Hypertarget{classSFMLModule_abd8f935b2c449c20919445ab90813daa}\label{classSFMLModule_abd8f935b2c449c20919445ab90813daa}} 
+\index{SFMLModule@{SFMLModule}!getRectangle@{getRectangle}}
+\index{getRectangle@{getRectangle}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{getRectangle()}{getRectangle()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Rectangle\+Shape $>$ SFMLModule\+::get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSFMLModule_a00d7787bda0d71d9422e55cecb6c6d34}\label{classSFMLModule_a00d7787bda0d71d9422e55cecb6c6d34}} 
+\index{SFMLModule@{SFMLModule}!initRectangle@{initRectangle}}
+\index{initRectangle@{initRectangle}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{initRectangle()}{initRectangle()}}
+{\footnotesize\ttfamily void SFMLModule\+::init\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 3
+\mbox{\Hypertarget{classSFMLModule_ac931ea737fd4471e5e53085f5a3e924e}\label{classSFMLModule_ac931ea737fd4471e5e53085f5a3e924e}} 
+\index{SFMLModule@{SFMLModule}!key\_handler@{key\_handler}}
+\index{key\_handler@{key\_handler}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{key\_handler()}{key\_handler()}}
+{\footnotesize\ttfamily void SFMLModule\+::key\+\_\+handler (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{\+\_\+window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSFMLModule_ae7bb1e91595d160b931304183748d1de}\label{classSFMLModule_ae7bb1e91595d160b931304183748d1de}} 
+\index{SFMLModule@{SFMLModule}!setStat@{setStat}}
+\index{setStat@{setStat}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{setStat()}{setStat()}}
+{\footnotesize\ttfamily void SFMLModule\+::set\+Stat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 4
+
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{classSFMLModule_a9d4b469492db3a6e8a6a90c1f2398608}\label{classSFMLModule_a9d4b469492db3a6e8a6a90c1f2398608}} 
+\index{SFMLModule@{SFMLModule}!\_window@{\_window}}
+\index{\_window@{\_window}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ SFMLModule\+::\+\_\+window}
+
+\mbox{\Hypertarget{classSFMLModule_ad4d7f6f50f7f75f92b63385d8e784140}\label{classSFMLModule_ad4d7f6f50f7f75f92b63385d8e784140}} 
+\index{SFMLModule@{SFMLModule}!BigPoint@{BigPoint}}
+\index{BigPoint@{BigPoint}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{BigPoint}{BigPoint}}
+{\footnotesize\ttfamily int SFMLModule\+::\+Big\+Point = 0}
+
+\mbox{\Hypertarget{classSFMLModule_ab859c47a34f52baddaff31bf235ee68f}\label{classSFMLModule_ab859c47a34f52baddaff31bf235ee68f}} 
+\index{SFMLModule@{SFMLModule}!Door@{Door}}
+\index{Door@{Door}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{Door}{Door}}
+{\footnotesize\ttfamily int SFMLModule\+::\+Door = 0}
+
+\mbox{\Hypertarget{classSFMLModule_a7a80d4e64bd3f1f389ab5211e318a7fe}\label{classSFMLModule_a7a80d4e64bd3f1f389ab5211e318a7fe}} 
+\index{SFMLModule@{SFMLModule}!Fruit@{Fruit}}
+\index{Fruit@{Fruit}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{Fruit}{Fruit}}
+{\footnotesize\ttfamily int SFMLModule\+::\+Fruit = 0}
+
+\mbox{\Hypertarget{classSFMLModule_aaca3335ef5dec0b907aa5d2ade32f383}\label{classSFMLModule_aaca3335ef5dec0b907aa5d2ade32f383}} 
+\index{SFMLModule@{SFMLModule}!Ghost@{Ghost}}
+\index{Ghost@{Ghost}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{Ghost}{Ghost}}
+{\footnotesize\ttfamily int SFMLModule\+::\+Ghost = 0}
+
+\mbox{\Hypertarget{classSFMLModule_a7e9c177f0f58516bf1f5ae1e1401df7e}\label{classSFMLModule_a7e9c177f0f58516bf1f5ae1e1401df7e}} 
+\index{SFMLModule@{SFMLModule}!player@{player}}
+\index{player@{player}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily int SFMLModule\+::player = 0}
+
+\mbox{\Hypertarget{classSFMLModule_acff27b4c16c9659ed8cb89374d421285}\label{classSFMLModule_acff27b4c16c9659ed8cb89374d421285}} 
+\index{SFMLModule@{SFMLModule}!point@{point}}
+\index{point@{point}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily int SFMLModule\+::point = 0}
+
+\mbox{\Hypertarget{classSFMLModule_a24e4701f75c78dd850210872b5dfb19c}\label{classSFMLModule_a24e4701f75c78dd850210872b5dfb19c}} 
+\index{SFMLModule@{SFMLModule}!Portail@{Portail}}
+\index{Portail@{Portail}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{Portail}{Portail}}
+{\footnotesize\ttfamily int SFMLModule\+::\+Portail = 0}
+
+\mbox{\Hypertarget{classSFMLModule_aee48db3d24ac3ba7e42c39c191a66743}\label{classSFMLModule_aee48db3d24ac3ba7e42c39c191a66743}} 
+\index{SFMLModule@{SFMLModule}!wall@{wall}}
+\index{wall@{wall}!SFMLModule@{SFMLModule}}
+\doxysubsubsection{\texorpdfstring{wall}{wall}}
+{\footnotesize\ttfamily int SFMLModule\+::wall = 0}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+include/\+Modules/\+Graphics/\mbox{\hyperlink{SFMLModule_8hpp}{SFMLModule.\+hpp}}\item 
+src/\+Modules/\+Graphics/\mbox{\hyperlink{SFMLModule_8cpp}{SFMLModule.\+cpp}}\end{DoxyCompactItemize}

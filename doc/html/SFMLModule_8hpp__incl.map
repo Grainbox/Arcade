@@ -1,0 +1,12 @@
+<map id="include/Modules/Graphics/SFMLModule.hpp" name="include/Modules/Graphics/SFMLModule.hpp">
+<area shape="rect" id="node1" title="Ce fichier implémente la lib graphique SFML." alt="" coords="365,5,555,45"/>
+<area shape="rect" id="node2" href="$Graphics_8hpp.html" title=" " alt="" coords="88,93,195,119"/>
+<area shape="rect" id="node7" title=" " alt="" coords="219,93,365,119"/>
+<area shape="rect" id="node8" title=" " alt="" coords="390,93,530,119"/>
+<area shape="rect" id="node9" title=" " alt="" coords="555,93,693,119"/>
+<area shape="rect" id="node10" title=" " alt="" coords="718,93,901,119"/>
+<area shape="rect" id="node3" href="$IGraphics_8hpp.html" title=" " alt="" coords="86,167,197,192"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,240,85,265"/>
+<area shape="rect" id="node5" title=" " alt="" coords="110,240,173,265"/>
+<area shape="rect" id="node6" href="$events_8hpp.html" title="Ce fichier contient les définitions des différents events reçus par les librairies graphiques." alt="" coords="197,240,291,265"/>
+</map>

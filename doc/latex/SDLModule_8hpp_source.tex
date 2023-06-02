@@ -1,0 +1,87 @@
+\hypertarget{SDLModule_8hpp_source}{}\doxysection{SDLModule.\+hpp}
+\label{SDLModule_8hpp_source}\index{include/Modules/Graphics/SDLModule.hpp@{include/Modules/Graphics/SDLModule.hpp}}
+\mbox{\hyperlink{SDLModule_8hpp}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/REN-\/4-\/1-\/arcade-\/hugo1.fontaine}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SDLModule}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ SDLMODULE\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ SDLMODULE\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Graphics_8hpp}{Graphics.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL\_ttf.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classOpenFontError}{OpenFontError}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOpenFontError_a70cea9e44ba04d370a2fc2e0b35cac55}{OpenFontError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOpenFontError_acd200ea78331746c2553b3f5f638080f}{\string~OpenFontError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classOpenFontError_ac3e9b9574bdbad7969ec31e534417886}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Failed\ to\ load\ font"{}};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCreateTextureError}{CreateTextureError}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCreateTextureError_a9db64b3f1b855106aa69c878f7658519}{CreateTextureError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classCreateTextureError_a88adf2dd7cd5c2b1d62a802b9e50ff04}{\string~CreateTextureError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classCreateTextureError_a5df5289b470a85fc41c2cd8553f5ea6a}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00032\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Cannot\ create\ texture"{}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSDLModule}{SDLModule}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classGraphics}{Graphics}}\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLModule_a6c531dc987abed378211078e5b1d59b4}{SDLModule}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSDLModule_a10e288177d38658e756bd1c997ed7c49}{\string~SDLModule}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSDLModule_a5121ca2d77398a3709b02266ca6eae44}{display}}(std::vector<std::string>\ frame);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSDLModule_a4e8e0a73e96dfde9c4442bc8b5d1f098}{getEvent}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ display\_menu();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ init\_text();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ menuEvent();}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ upMenuButton();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ downMenuButton();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ selectedButton;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ displayMenu;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ SDL\_Window*\ window;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ renderer;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ SDL\_Event\ event;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ SDL\_Surface\ *firstGameText\_srf;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ SDL\_Texture\ *firstGameText\_txt;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ SDL\_Rect\ firstGameText\_rect;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ SDL\_Surface\ *firstGameTextSur\_srf;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ SDL\_Texture\ *firstGameTextSur\_txt;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ SDL\_Surface\ *secGameText\_srf;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ SDL\_Texture\ *secGameText\_txt;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ SDL\_Rect\ secGameText\_rect;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ SDL\_Surface\ *secGameTextSur\_srf;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ SDL\_Texture\ *secGameTextSur\_txt;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ SDL\_Surface\ *thiGameText\_srf;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ SDL\_Texture\ *thiGameText\_txt;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ SDL\_Rect\ thiGameText\_rect;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ SDL\_Surface\ *thiGameTextSur\_srf;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ SDL\_Texture\ *thiGameTextSur\_txt;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ TTF\_Font*\ font;}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !SDLMODULE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

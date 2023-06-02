@@ -1,0 +1,96 @@
+\hypertarget{classGames}{}\doxysection{Référence de la classe Games}
+\label{classGames}\index{Games@{Games}}
+
+
+{\ttfamily \#include $<$Games.\+hpp$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Games\+:
+% FIG 0
+
+
+Graphe de collaboration de Games\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGames_a1ec8bb9531219a9a234b7f918860ab01}{$\sim$\+Games}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classGames_ab8eaa6c07b4ec94e7ff6214502ef9d7a}{event\+Handler}} (int event)=0
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGames_a1a04d2fd7b54a1704527f64fb49df11e}{get\+Frame}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classIGames}{IGames}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIGames_a1b99f937408deef484a442cb906bfb1a}{$\sim$\+IGames}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classIGames_ae75c32be13283a7c31de502014ffdf6e}{event\+Handler}} (int event)=0
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{get\+Frame}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGames_a6ca63791c1ba6ef9e4a6b007cb512dcf}{frame}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGames_a1ec8bb9531219a9a234b7f918860ab01}\label{classGames_a1ec8bb9531219a9a234b7f918860ab01}} 
+\index{Games@{Games}!````~Games@{$\sim$Games}}
+\index{````~Games@{$\sim$Games}!Games@{Games}}
+\doxysubsubsection{\texorpdfstring{$\sim$Games()}{~Games()}}
+{\footnotesize\ttfamily Games\+::$\sim$\+Games (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGames_ab8eaa6c07b4ec94e7ff6214502ef9d7a}\label{classGames_ab8eaa6c07b4ec94e7ff6214502ef9d7a}} 
+\index{Games@{Games}!eventHandler@{eventHandler}}
+\index{eventHandler@{eventHandler}!Games@{Games}}
+\doxysubsubsection{\texorpdfstring{eventHandler()}{eventHandler()}}
+{\footnotesize\ttfamily virtual void Games\+::event\+Handler (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Récupère l\textquotesingle{}event provenant d \mbox{\hyperlink{classIGraphics_aedb2667f2f41530113957f758c2e5f9d}{IGraphics\+::get\+Event()}} et update la frame en fonction de l\textquotesingle{}event 
+\begin{DoxyParams}{Paramètres}
+{\em event} & L\textquotesingle{}event envoyé par \mbox{\hyperlink{classIGraphics_aedb2667f2f41530113957f758c2e5f9d}{IGraphics\+::get\+Event()}} \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \mbox{\hyperlink{classIGames_ae75c32be13283a7c31de502014ffdf6e}{IGames}}.
+
+
+
+Implémenté dans \mbox{\hyperlink{classSnakeModule_a1c76029e663a2a564a07fd91b1da567d}{Snake\+Module}}.
+
+\mbox{\Hypertarget{classGames_a1a04d2fd7b54a1704527f64fb49df11e}\label{classGames_a1a04d2fd7b54a1704527f64fb49df11e}} 
+\index{Games@{Games}!getFrame@{getFrame}}
+\index{getFrame@{getFrame}!Games@{Games}}
+\doxysubsubsection{\texorpdfstring{getFrame()}{getFrame()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ std\+::string $>$ Games\+::get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Renvoi la Frame dans son état actuel 
+
+Implémente \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{IGames}}.
+
+
+
+Implémenté dans \mbox{\hyperlink{classSnakeModule_a9c8163529c02b205817b212966a97594}{Snake\+Module}}.
+
+
+
+\doxysubsection{Documentation des champs}
+\mbox{\Hypertarget{classGames_a6ca63791c1ba6ef9e4a6b007cb512dcf}\label{classGames_a6ca63791c1ba6ef9e4a6b007cb512dcf}} 
+\index{Games@{Games}!frame@{frame}}
+\index{frame@{frame}!Games@{Games}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Games\+::frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Games_8hpp}{Games.\+hpp}}\end{DoxyCompactItemize}

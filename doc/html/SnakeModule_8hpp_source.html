@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arcade:  Fichier source de include/Modules/Games/SnakeModule.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Arcade
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c2973f5af505654d03cbcef66713891e.html">Modules</a></li><li class="navelem"><a class="el" href="dir_b48a8f9fc4a83722ca4926f5017388a6.html">Games</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">SnakeModule.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="SnakeModule_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">** EPITECH PROJECT, 2023</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** B-OOP-400-REN-4-1-arcade-hugo1.fontaine</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** SnakeModule</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef SNAKEMODULE_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define SNAKEMODULE_HPP_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    #include &lt;<a class="code" href="Games_8hpp.html">Games.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classSnakeModule.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classSnakeModule.html">SnakeModule</a> : <span class="keyword">public</span> <a class="code hl_class" href="classGames.html">Games</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_function" href="classSnakeModule.html#a3f4eb48d1a95f5acf61ac715376b8c1c">SnakeModule</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_function" href="classSnakeModule.html#a55dc266cf6e7ce0185175ee350efb7d6">~SnakeModule</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSnakeModule.html#a1c76029e663a2a564a07fd91b1da567d">eventHandler</a>(<span class="keywordtype">int</span> event);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        std::vector&lt;std::string&gt; <a class="code hl_function" href="classSnakeModule.html#a9c8163529c02b205817b212966a97594">getFrame</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classSnakeModule.html#a1e8285452255b8a1efed1de52ad52a1a">   26</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSnakeModule.html#a1e8285452255b8a1efed1de52ad52a1a">snakeGrow</a>() { this-&gt;_snakeSize += 1; };</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classSnakeModule.html#a91fd50ef5bd38ae2cca4b4b988f6fc16">   27</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classSnakeModule.html#a91fd50ef5bd38ae2cca4b4b988f6fc16">getSnakeSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;_snakeSize; };</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        std::vector&lt;int&gt; <a class="code hl_function" href="classSnakeModule.html#a75f5b5a41c14cf4db48d1180d32bfd01">findHeadPos</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classSnakeModule.html#afc554ee4661fffd68e080574c0c6971e">   30</a></span>        std::vector&lt;int&gt; <a class="code hl_function" href="classSnakeModule.html#afc554ee4661fffd68e080574c0c6971e">getHeadPos</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;_headPos; };</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classSnakeModule.html#a52d681f8739eca674322e2cdaa1d8a06">   31</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSnakeModule.html#a52d681f8739eca674322e2cdaa1d8a06">setHeadPos</a>(std::vector&lt;int&gt; new_pos) { this-&gt;_headPos = new_pos; };</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="comment">// int getScore() const { return this-&gt;_score; };</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">// void setScore(int new_score) { this-&gt;_score = new_score; };</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSnakeModule.html#abd2adfcf12c5e15bcc074002b722d918">updatePos</a>(<span class="keywordtype">int</span> event);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSnakeModule.html#aca2395df0ae7aef31c0bece8837d8595">setTail</a>(std::vector&lt;int&gt; headPos);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSnakeModule.html#abe0e82e61ee85e40f1961af48ed1edb4">updateTail</a>(std::vector&lt;int&gt; oldHeadPos); <span class="comment">// à appeler après updatePos().</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classSnakeModule.html#a3fd049ed65989809f61c8c20983d03c1">directOK</a>(<span class="keywordtype">int</span> event) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classSnakeModule.html#a810d86d43c203d59af50467773377c97">   41</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classSnakeModule.html#a810d86d43c203d59af50467773377c97">getDirection</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;_direction; };</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classSnakeModule.html#adc4ce5be933f7c964f416ff77aa68cd3">   42</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSnakeModule.html#adc4ce5be933f7c964f416ff77aa68cd3">setDirection</a>(<span class="keywordtype">int</span> new_direct) { this-&gt;_direction = new_direct; };</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">int</span> _snakeSize;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">// int _score;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">int</span> _direction;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        std::vector&lt;int&gt; _headPos; <span class="comment">// [1]line [2]col</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        std::vector&lt;std::vector&lt;int&gt;&gt; _tail;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classInvalidMap.html">   53</a></span><span class="keyword">class </span><a class="code hl_class" href="classInvalidMap.html">InvalidMap</a> : <span class="keyword">public</span> std::exception {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classInvalidMap.html#a7b104af7d18be55de3d1de8ad1a7e896">   55</a></span>    <a class="code hl_function" href="classInvalidMap.html#a7b104af7d18be55de3d1de8ad1a7e896">InvalidMap</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classInvalidMap.html#a29142d26ea131cdf306023be1ac7ceec">   56</a></span>    <a class="code hl_function" href="classInvalidMap.html#a29142d26ea131cdf306023be1ac7ceec">~InvalidMap</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classInvalidMap.html#a966aa195f62850133b4ad87eab7389aa">   58</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classInvalidMap.html#a966aa195f62850133b4ad87eab7389aa">what</a>() const noexcept<span class="keyword"> override</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Map is invalid&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aGames_8hpp_html"><div class="ttname"><a href="Games_8hpp.html">Games.hpp</a></div></div>
+<div class="ttc" id="aclassGames_html"><div class="ttname"><a href="classGames.html">Games</a></div><div class="ttdef"><b>Definition:</b> Games.hpp:13</div></div>
+<div class="ttc" id="aclassInvalidMap_html"><div class="ttname"><a href="classInvalidMap.html">InvalidMap</a></div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:53</div></div>
+<div class="ttc" id="aclassInvalidMap_html_a29142d26ea131cdf306023be1ac7ceec"><div class="ttname"><a href="classInvalidMap.html#a29142d26ea131cdf306023be1ac7ceec">InvalidMap::~InvalidMap</a></div><div class="ttdeci">~InvalidMap()=default</div></div>
+<div class="ttc" id="aclassInvalidMap_html_a7b104af7d18be55de3d1de8ad1a7e896"><div class="ttname"><a href="classInvalidMap.html#a7b104af7d18be55de3d1de8ad1a7e896">InvalidMap::InvalidMap</a></div><div class="ttdeci">InvalidMap()=default</div></div>
+<div class="ttc" id="aclassInvalidMap_html_a966aa195f62850133b4ad87eab7389aa"><div class="ttname"><a href="classInvalidMap.html#a966aa195f62850133b4ad87eab7389aa">InvalidMap::what</a></div><div class="ttdeci">const char * what() const noexcept override</div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:58</div></div>
+<div class="ttc" id="aclassSnakeModule_html"><div class="ttname"><a href="classSnakeModule.html">SnakeModule</a></div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:18</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a1c76029e663a2a564a07fd91b1da567d"><div class="ttname"><a href="classSnakeModule.html#a1c76029e663a2a564a07fd91b1da567d">SnakeModule::eventHandler</a></div><div class="ttdeci">void eventHandler(int event)</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:79</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a1e8285452255b8a1efed1de52ad52a1a"><div class="ttname"><a href="classSnakeModule.html#a1e8285452255b8a1efed1de52ad52a1a">SnakeModule::snakeGrow</a></div><div class="ttdeci">void snakeGrow()</div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:26</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a3f4eb48d1a95f5acf61ac715376b8c1c"><div class="ttname"><a href="classSnakeModule.html#a3f4eb48d1a95f5acf61ac715376b8c1c">SnakeModule::SnakeModule</a></div><div class="ttdeci">SnakeModule()</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:117</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a3fd049ed65989809f61c8c20983d03c1"><div class="ttname"><a href="classSnakeModule.html#a3fd049ed65989809f61c8c20983d03c1">SnakeModule::directOK</a></div><div class="ttdeci">bool directOK(int event) const</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:22</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a52d681f8739eca674322e2cdaa1d8a06"><div class="ttname"><a href="classSnakeModule.html#a52d681f8739eca674322e2cdaa1d8a06">SnakeModule::setHeadPos</a></div><div class="ttdeci">void setHeadPos(std::vector&lt; int &gt; new_pos)</div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:31</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a55dc266cf6e7ce0185175ee350efb7d6"><div class="ttname"><a href="classSnakeModule.html#a55dc266cf6e7ce0185175ee350efb7d6">SnakeModule::~SnakeModule</a></div><div class="ttdeci">~SnakeModule()</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:136</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a75f5b5a41c14cf4db48d1180d32bfd01"><div class="ttname"><a href="classSnakeModule.html#a75f5b5a41c14cf4db48d1180d32bfd01">SnakeModule::findHeadPos</a></div><div class="ttdeci">std::vector&lt; int &gt; findHeadPos()</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:90</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a810d86d43c203d59af50467773377c97"><div class="ttname"><a href="classSnakeModule.html#a810d86d43c203d59af50467773377c97">SnakeModule::getDirection</a></div><div class="ttdeci">int getDirection() const</div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:41</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a91fd50ef5bd38ae2cca4b4b988f6fc16"><div class="ttname"><a href="classSnakeModule.html#a91fd50ef5bd38ae2cca4b4b988f6fc16">SnakeModule::getSnakeSize</a></div><div class="ttdeci">int getSnakeSize() const</div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:27</div></div>
+<div class="ttc" id="aclassSnakeModule_html_a9c8163529c02b205817b212966a97594"><div class="ttname"><a href="classSnakeModule.html#a9c8163529c02b205817b212966a97594">SnakeModule::getFrame</a></div><div class="ttdeci">std::vector&lt; std::string &gt; getFrame()</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:85</div></div>
+<div class="ttc" id="aclassSnakeModule_html_abd2adfcf12c5e15bcc074002b722d918"><div class="ttname"><a href="classSnakeModule.html#abd2adfcf12c5e15bcc074002b722d918">SnakeModule::updatePos</a></div><div class="ttdeci">void updatePos(int event)</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:45</div></div>
+<div class="ttc" id="aclassSnakeModule_html_abe0e82e61ee85e40f1961af48ed1edb4"><div class="ttname"><a href="classSnakeModule.html#abe0e82e61ee85e40f1961af48ed1edb4">SnakeModule::updateTail</a></div><div class="ttdeci">void updateTail(std::vector&lt; int &gt; oldHeadPos)</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:32</div></div>
+<div class="ttc" id="aclassSnakeModule_html_aca2395df0ae7aef31c0bece8837d8595"><div class="ttname"><a href="classSnakeModule.html#aca2395df0ae7aef31c0bece8837d8595">SnakeModule::setTail</a></div><div class="ttdeci">void setTail(std::vector&lt; int &gt; headPos)</div><div class="ttdef"><b>Definition:</b> SnakeModule.cpp:107</div></div>
+<div class="ttc" id="aclassSnakeModule_html_adc4ce5be933f7c964f416ff77aa68cd3"><div class="ttname"><a href="classSnakeModule.html#adc4ce5be933f7c964f416ff77aa68cd3">SnakeModule::setDirection</a></div><div class="ttdeci">void setDirection(int new_direct)</div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:42</div></div>
+<div class="ttc" id="aclassSnakeModule_html_afc554ee4661fffd68e080574c0c6971e"><div class="ttname"><a href="classSnakeModule.html#afc554ee4661fffd68e080574c0c6971e">SnakeModule::getHeadPos</a></div><div class="ttdeci">std::vector&lt; int &gt; getHeadPos() const</div><div class="ttdef"><b>Definition:</b> SnakeModule.hpp:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

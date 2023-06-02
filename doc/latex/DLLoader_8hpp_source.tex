@@ -1,0 +1,45 @@
+\hypertarget{DLLoader_8hpp_source}{}\doxysection{DLLoader.\+hpp}
+\label{DLLoader_8hpp_source}\index{include/DLLoader.hpp@{include/DLLoader.hpp}}
+\mbox{\hyperlink{DLLoader_8hpp}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/REN-\/4-\/1-\/arcade-\/hugo1.fontaine}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ DLLoader}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ DLLOADER\_HPP\_}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ DLLOADER\_HPP\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ <iostream>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ <dlfcn.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{IGraphics_8hpp}{IGraphics.hpp}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{IGames_8hpp}{IGames.hpp}}"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classOpenLibError}{OpenLibError}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOpenLibError_a161ba2c3667dad0ae3375c5d4ee17691}{OpenLibError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOpenLibError_acaff407cdc4700b01bb5ac78de64f3b2}{\string~OpenLibError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classOpenLibError_a358cca489388d35a54eb730ed5b29341}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDLLoader}{DLLoader}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDLLoader}{DLLoader}}(\textcolor{keyword}{const}\ std::string\&\ lib\_path);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDLLoader_aea867b497cf92c50f85ad7e1d37962ae}{\string~DLLoader}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ T*\ \mbox{\hyperlink{classDLLoader_a8e7744ea44c22b091837503731fd49e9}{getInstance}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}*\ lib\_handle;}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !DLLOADER\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

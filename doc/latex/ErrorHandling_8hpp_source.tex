@@ -1,0 +1,94 @@
+\hypertarget{ErrorHandling_8hpp_source}{}\doxysection{Error\+Handling.\+hpp}
+\label{ErrorHandling_8hpp_source}\index{include/ErrorHandling.hpp@{include/ErrorHandling.hpp}}
+\mbox{\hyperlink{ErrorHandling_8hpp}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/REN-\/4-\/1-\/arcade-\/hugo1.fontaine}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ErrorHandling}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ ERRORHANDLING\_HPP\_}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ ERRORHANDLING\_HPP\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ <exception>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ <vector>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ <iostream>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#include\ <filesystem>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classArgNumberError}{ArgNumberError}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classArgNumberError_ab5dc7e7e6f8cd16e22bcd2945dc26821}{ArgNumberError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classArgNumberError_ab857572260b8bf144a2f377dfa643fe5}{\string~ArgNumberError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classArgNumberError_a638f54dc4f9428e52c9c6f66a4121b91}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Wrong\ argument"{}};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInvalidLibError}{InvalidLibError}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classInvalidLibError_a5925d0772dae8e10442184a93978bfde}{InvalidLibError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classInvalidLibError_a51be1e875cf3c46e5ce22c01e2a183d1}{\string~InvalidLibError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classInvalidLibError_a67c22e8e2fc533b241bde895a902e846}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00039\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Invalid\ Library"{}};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNoLibDirError}{NoLibDirError}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classNoLibDirError_a94253718ed03863e2c52740ad15a5b8a}{NoLibDirError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classNoLibDirError_a745b3afe392fcceefbe30717c18a0d6c}{\string~NoLibDirError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classNoLibDirError_ae97b1573a50f7769af5f263c96eda039}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00050\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}lib\ folder\ cannot\ be\ found"{}};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLibNotFoundError}{LibNotFoundError}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLibNotFoundError_aff2b40afbab1db48c37f2f82af7f4d08}{LibNotFoundError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLibNotFoundError_a422afa174a048006f637c6b9e0f57cb0}{\string~LibNotFoundError}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classLibNotFoundError_abf83490e9b23ff8a1b9a5c6f8b665a23}{what}}()\ const\ noexcept\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00061\ \textcolor{keyword}{\ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Library\ cannot\ be\ found"{}};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classErrorHandling}{ErrorHandling}}\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classErrorHandling}{ErrorHandling}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ **argv);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classErrorHandling_a02cf5ab12de3cde4e4556e1dfd3c25ba}{\string~ErrorHandling}}();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ isValidLib();}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ checkLibExists();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ std::string\ lib;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\ graphic\_libs\ =\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_ndk++.so"{}},}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_aalib.so"{}},}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_libcaca.so"{}},}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_allegro5.so"{}},}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_xlib.so"{}},}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_gtk+.so"{}},}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_sfml.so"{}},}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_irrlicht.so"{}},}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_opengl.so"{}},}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_vulkan.so"{}},}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_qt5.so"{}},}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_ncurses.so"{}},}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}arcade\_sdl2.so"{}}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !ERRORHANDLING\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

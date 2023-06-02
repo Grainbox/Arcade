@@ -1,0 +1,12 @@
+<map id="include/Modules/Games/SnakeModule.hpp" name="include/Modules/Games/SnakeModule.hpp">
+<area shape="rect" id="node1" title="Ce fichier implémente le jeu Snake." alt="" coords="240,5,419,45"/>
+<area shape="rect" id="node2" href="$Games_8hpp.html" title=" " alt="" coords="281,93,377,119"/>
+<area shape="rect" id="node3" href="$IGames_8hpp.html" title=" " alt="" coords="279,167,379,192"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,240,85,265"/>
+<area shape="rect" id="node5" title=" " alt="" coords="109,240,176,265"/>
+<area shape="rect" id="node6" title=" " alt="" coords="201,240,271,265"/>
+<area shape="rect" id="node7" title=" " alt="" coords="296,240,363,265"/>
+<area shape="rect" id="node8" title=" " alt="" coords="387,240,450,265"/>
+<area shape="rect" id="node9" title=" " alt="" coords="474,240,558,265"/>
+<area shape="rect" id="node10" href="$events_8hpp.html" title="Ce fichier contient les définitions des différents events reçus par les librairies graphiques." alt="" coords="582,240,677,265"/>
+</map>

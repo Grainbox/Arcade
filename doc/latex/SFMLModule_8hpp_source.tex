@@ -1,0 +1,49 @@
+\hypertarget{SFMLModule_8hpp_source}{}\doxysection{SFMLModule.\+hpp}
+\label{SFMLModule_8hpp_source}\index{include/Modules/Graphics/SFMLModule.hpp@{include/Modules/Graphics/SFMLModule.hpp}}
+\mbox{\hyperlink{SFMLModule_8hpp}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/REN-\/4-\/1-\/arcade-\/hugo1.fontaine}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ SFMLModule}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ SFMLMODULE\_HPP\_}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ SFMLMODULE\_HPP\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{Graphics_8hpp}{Graphics.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SFML/Window.hpp>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SFML/System.hpp>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SFML/Graphics/Color.hpp>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSFMLModule}{SFMLModule}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classGraphics}{Graphics}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSFMLModule_a6beecca2c0d6f3160d74f90a918ca011}{SFMLModule}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSFMLModule_a0f9f01358a9e3f909d6ba59f35f4587f}{\string~SFMLModule}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSFMLModule_a01bf6747e7438baaf7848edb68a5d4a2}{display}}(std::vector<std::string>\ frame);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_a6e80ceb109501958f70b2b3abf5667a8}{getEvent}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSFMLModule_a00d7787bda0d71d9422e55cecb6c6d34}{initRectangle}}\ ();}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::vector<sf::RectangleShape>\ \mbox{\hyperlink{classSFMLModule_abd8f935b2c449c20919445ab90813daa}{getRectangle}}()\ \{\ \textcolor{keywordflow}{return}\ rectangles;\ \};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSFMLModule_ac931ea737fd4471e5e53085f5a3e924e}{key\_handler}}(sf::RenderWindow\ *\mbox{\hyperlink{classSFMLModule_a9d4b469492db3a6e8a6a90c1f2398608}{\_window}});}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSFMLModule_ae7bb1e91595d160b931304183748d1de}{setStat}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_aee48db3d24ac3ba7e42c39c191a66743}{wall}}\ =\ 0;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_a7e9c177f0f58516bf1f5ae1e1401df7e}{player}}\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_ab859c47a34f52baddaff31bf235ee68f}{Door}}\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_a24e4701f75c78dd850210872b5dfb19c}{Portail}}\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_aaca3335ef5dec0b907aa5d2ade32f383}{Ghost}}\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_acff27b4c16c9659ed8cb89374d421285}{point}}\ =\ 0;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_ad4d7f6f50f7f75f92b63385d8e784140}{BigPoint}}\ =\ 0;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classSFMLModule_a7a80d4e64bd3f1f389ab5211e318a7fe}{Fruit}}\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ sf::RenderWindow\ *\mbox{\hyperlink{classSFMLModule_a9d4b469492db3a6e8a6a90c1f2398608}{\_window}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::string>\ map;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<sf::RectangleShape>\ rectangles;}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !SFMLMODULE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

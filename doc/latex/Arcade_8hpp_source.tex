@@ -1,0 +1,40 @@
+\hypertarget{Arcade_8hpp_source}{}\doxysection{Arcade.\+hpp}
+\label{Arcade_8hpp_source}\index{include/Arcade.hpp@{include/Arcade.hpp}}
+\mbox{\hyperlink{Arcade_8hpp}{Aller à la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/REN-\/4-\/1-\/arcade-\/hugo1.fontaine}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Arcade}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ ARCADE\_HPP\_}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ ARCADE\_HPP\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ <iostream>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{IGraphics_8hpp}{IGraphics.hpp}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{IGames_8hpp}{IGames.hpp}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{DLLoader_8hpp}{DLLoader.hpp}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{events_8hpp}{events.hpp}}"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classArcade}{Arcade}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classArcade}{Arcade}}(std::string\ graphicLibPath);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classArcade_a086282e1d75300e3a93734ec2a596e0b}{\string~Arcade}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_a3a80a76ad9108debc160bd86a7e21a22}{loadGraphic}}(std::string\ path);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classArcade_a6bf1c6af608ef61ff1c0bfb82046c3e9}{loadGame}}(std::string\ path);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::string\ libPath;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDLLoader}{DLLoader<IGames>}}\ *gameLoader;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classDLLoader}{DLLoader<IGraphics>}}\ *graphicLoader;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classIGames}{IGames}}\ *game;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classIGraphics}{IGraphics}}\ *graphic;}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !ARCADE\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

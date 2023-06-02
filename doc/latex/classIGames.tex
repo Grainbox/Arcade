@@ -1,0 +1,74 @@
+\hypertarget{classIGames}{}\doxysection{Référence de l\textquotesingle{}interface IGames}
+\label{classIGames}\index{IGames@{IGames}}
+
+
+{\ttfamily \#include $<$IGames.\+hpp$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de IGames\+:
+% FIG 0
+
+
+Graphe de collaboration de IGames\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIGames_a1b99f937408deef484a442cb906bfb1a}{$\sim$\+IGames}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classIGames_ae75c32be13283a7c31de502014ffdf6e}{event\+Handler}} (int event)=0
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{get\+Frame}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Gère les différents jeux de l\textquotesingle{}arcade
+
+Gère les différentes libs graphiques de l\textquotesingle{}arcade 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classIGames_a1b99f937408deef484a442cb906bfb1a}\label{classIGames_a1b99f937408deef484a442cb906bfb1a}} 
+\index{IGames@{IGames}!````~IGames@{$\sim$IGames}}
+\index{````~IGames@{$\sim$IGames}!IGames@{IGames}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGames()}{~IGames()}}
+{\footnotesize\ttfamily virtual IGames\+::$\sim$\+IGames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classIGames_ae75c32be13283a7c31de502014ffdf6e}\label{classIGames_ae75c32be13283a7c31de502014ffdf6e}} 
+\index{IGames@{IGames}!eventHandler@{eventHandler}}
+\index{eventHandler@{eventHandler}!IGames@{IGames}}
+\doxysubsubsection{\texorpdfstring{eventHandler()}{eventHandler()}}
+{\footnotesize\ttfamily void IGames\+::event\+Handler (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Récupère l\textquotesingle{}event provenant d \mbox{\hyperlink{classIGraphics_aedb2667f2f41530113957f758c2e5f9d}{IGraphics\+::get\+Event()}} et update la frame en fonction de l\textquotesingle{}event 
+\begin{DoxyParams}{Paramètres}
+{\em event} & L\textquotesingle{}event envoyé par \mbox{\hyperlink{classIGraphics_aedb2667f2f41530113957f758c2e5f9d}{IGraphics\+::get\+Event()}} \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \mbox{\hyperlink{classSnakeModule_a1c76029e663a2a564a07fd91b1da567d}{Snake\+Module}}, et \mbox{\hyperlink{classGames_ab8eaa6c07b4ec94e7ff6214502ef9d7a}{Games}}.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 2
+\mbox{\Hypertarget{classIGames_a09ad3ccb5a88d044df833645581e0333}\label{classIGames_a09ad3ccb5a88d044df833645581e0333}} 
+\index{IGames@{IGames}!getFrame@{getFrame}}
+\index{getFrame@{getFrame}!IGames@{IGames}}
+\doxysubsubsection{\texorpdfstring{getFrame()}{getFrame()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ IGames\+::get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Renvoi la Frame dans son état actuel 
+
+Implémenté dans \mbox{\hyperlink{classSnakeModule_a9c8163529c02b205817b212966a97594}{Snake\+Module}}, et \mbox{\hyperlink{classGames_a1a04d2fd7b54a1704527f64fb49df11e}{Games}}.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 3
+
+
+La documentation de cette interface a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{IGames_8hpp}{IGames.\+hpp}}\end{DoxyCompactItemize}

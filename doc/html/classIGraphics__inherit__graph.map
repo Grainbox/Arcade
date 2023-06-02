@@ -1,0 +1,7 @@
+<map id="IGraphics" name="IGraphics">
+<area shape="rect" id="node1" title=" " alt="" coords="181,5,328,171"/>
+<area shape="rect" id="node2" href="$classGraphics.html" title=" " alt="" coords="181,219,328,384"/>
+<area shape="rect" id="node3" href="$classNCursesModule.html" title=" " alt="" coords="5,520,165,641"/>
+<area shape="rect" id="node4" href="$classSDLModule.html" title=" " alt="" coords="189,520,320,641"/>
+<area shape="rect" id="node5" href="$classSFMLModule.html" title=" " alt="" coords="344,432,485,729"/>
+</map>

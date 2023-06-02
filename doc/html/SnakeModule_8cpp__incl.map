@@ -1,0 +1,14 @@
+<map id="src/Modules/Games/SnakeModule.cpp" name="src/Modules/Games/SnakeModule.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="79,5,347,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,299,72,324"/>
+<area shape="rect" id="node3" href="$SnakeModule_8hpp.html" title="Ce fichier implémente le jeu Snake." alt="" coords="145,79,282,104"/>
+<area shape="rect" id="node12" title=" " alt="" coords="306,79,379,104"/>
+<area shape="rect" id="node4" href="$Games_8hpp.html" title=" " alt="" coords="176,152,272,177"/>
+<area shape="rect" id="node5" href="$IGames_8hpp.html" title=" " alt="" coords="233,225,333,251"/>
+<area shape="rect" id="node6" title=" " alt="" coords="96,299,176,324"/>
+<area shape="rect" id="node7" title=" " alt="" coords="201,299,271,324"/>
+<area shape="rect" id="node8" title=" " alt="" coords="296,299,363,324"/>
+<area shape="rect" id="node9" title=" " alt="" coords="387,299,450,324"/>
+<area shape="rect" id="node10" title=" " alt="" coords="474,299,558,324"/>
+<area shape="rect" id="node11" href="$events_8hpp.html" title="Ce fichier contient les définitions des différents events reçus par les librairies graphiques." alt="" coords="582,299,677,324"/>
+</map>

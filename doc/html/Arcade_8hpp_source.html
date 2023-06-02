@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arcade:  Fichier source de include/Arcade.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Arcade
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Arcade.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Arcade_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">** EPITECH PROJECT, 2023</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** B-OOP-400-REN-4-1-arcade-hugo1.fontaine</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** Arcade</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef ARCADE_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define ARCADE_HPP_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    #include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">    #include &quot;<a class="code" href="IGraphics_8hpp.html">IGraphics.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">    #include &quot;<a class="code" href="IGames_8hpp.html">IGames.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    #include &quot;<a class="code" href="DLLoader_8hpp.html">DLLoader.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">    #include &quot;<a class="code" href="events_8hpp.html">events.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classArcade.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classArcade.html">Arcade</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_class" href="classArcade.html">Arcade</a>(std::string graphicLibPath);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_function" href="classArcade.html#a086282e1d75300e3a93734ec2a596e0b">~Arcade</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classArcade.html#a3a80a76ad9108debc160bd86a7e21a22">loadGraphic</a>(std::string path);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classArcade.html#a6bf1c6af608ef61ff1c0bfb82046c3e9">loadGame</a>(std::string path);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        std::string libPath;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="classDLLoader.html">DLLoader&lt;IGames&gt;</a> *gameLoader;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="classDLLoader.html">DLLoader&lt;IGraphics&gt;</a> *graphicLoader;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_interface" href="classIGames.html">IGames</a> *game;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_class" href="classIGraphics.html">IGraphics</a> *graphic;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif </span><span class="comment">/* !ARCADE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aDLLoader_8hpp_html"><div class="ttname"><a href="DLLoader_8hpp.html">DLLoader.hpp</a></div><div class="ttdoc">Ce fichier est l'encapsulation de &lt;dlfcn.h&gt; en C.</div></div>
+<div class="ttc" id="aIGames_8hpp_html"><div class="ttname"><a href="IGames_8hpp.html">IGames.hpp</a></div></div>
+<div class="ttc" id="aIGraphics_8hpp_html"><div class="ttname"><a href="IGraphics_8hpp.html">IGraphics.hpp</a></div></div>
+<div class="ttc" id="aclassArcade_html"><div class="ttname"><a href="classArcade.html">Arcade</a></div><div class="ttdef"><b>Definition:</b> Arcade.hpp:22</div></div>
+<div class="ttc" id="aclassArcade_html_a086282e1d75300e3a93734ec2a596e0b"><div class="ttname"><a href="classArcade.html#a086282e1d75300e3a93734ec2a596e0b">Arcade::~Arcade</a></div><div class="ttdeci">~Arcade()</div><div class="ttdef"><b>Definition:</b> Arcade.cpp:39</div></div>
+<div class="ttc" id="aclassArcade_html_a3a80a76ad9108debc160bd86a7e21a22"><div class="ttname"><a href="classArcade.html#a3a80a76ad9108debc160bd86a7e21a22">Arcade::loadGraphic</a></div><div class="ttdeci">void loadGraphic(std::string path)</div><div class="ttdef"><b>Definition:</b> Arcade.cpp:51</div></div>
+<div class="ttc" id="aclassArcade_html_a6bf1c6af608ef61ff1c0bfb82046c3e9"><div class="ttname"><a href="classArcade.html#a6bf1c6af608ef61ff1c0bfb82046c3e9">Arcade::loadGame</a></div><div class="ttdeci">void loadGame(std::string path)</div><div class="ttdef"><b>Definition:</b> Arcade.cpp:57</div></div>
+<div class="ttc" id="aclassDLLoader_html"><div class="ttname"><a href="classDLLoader.html">DLLoader</a></div><div class="ttdef"><b>Definition:</b> DLLoader.hpp:33</div></div>
+<div class="ttc" id="aclassIGames_html"><div class="ttname"><a href="classIGames.html">IGames</a></div><div class="ttdef"><b>Definition:</b> IGames.hpp:23</div></div>
+<div class="ttc" id="aclassIGraphics_html"><div class="ttname"><a href="classIGraphics.html">IGraphics</a></div><div class="ttdef"><b>Definition:</b> IGraphics.hpp:19</div></div>
+<div class="ttc" id="aevents_8hpp_html"><div class="ttname"><a href="events_8hpp.html">events.hpp</a></div><div class="ttdoc">Ce fichier contient les définitions des différents events reçus par les librairies graphiques.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

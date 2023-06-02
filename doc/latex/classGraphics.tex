@@ -1,0 +1,148 @@
+\hypertarget{classGraphics}{}\doxysection{Référence de la classe Graphics}
+\label{classGraphics}\index{Graphics@{Graphics}}
+
+
+{\ttfamily \#include $<$Graphics.\+hpp$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Graphics\+:
+% FIG 0
+
+
+Graphe de collaboration de Graphics\+:
+% FIG 1
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classGraphics_ae26714d485d834cdccc8d87aab7ddf59}{$\sim$\+Graphics}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classGraphics_a32fb1a496cf23cf6f45609718c5d299c}{display}} (std\+::vector$<$ std\+::string $>$ frame)=0
+\item 
+virtual int \mbox{\hyperlink{classGraphics_aa08ffbfb3bfccb355446f3203d449456}{get\+Event}} ()=0
+\item 
+std\+::string \mbox{\hyperlink{classGraphics_a4ecf4a382e0ff6f5d86b95efdb9af0ac}{get\+Game\+Name}} () const
+\item 
+std\+::string \mbox{\hyperlink{classGraphics_a514f98cf161f8d5698fadd0c5c00f918}{get\+Lib\+Name}} () const
+\item 
+void \mbox{\hyperlink{classGraphics_ae1a6c5ce7d367a908936e5cfc3eb7b59}{set\+Game\+Name}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{classGraphics_a5c1ceb143ec8a89293afd1561ee1c9c3}{set\+Lib\+Name}} (std\+::string name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classIGraphics}{IGraphics}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIGraphics_aa267c162c258cd02bac6692c43645657}{$\sim$\+IGraphics}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classIGraphics_ae38528555acb87085144e9b27d154cf8}{display}} (std\+::vector$<$ std\+::string $>$ frame)=0
+\item 
+virtual int \mbox{\hyperlink{classIGraphics_aedb2667f2f41530113957f758c2e5f9d}{get\+Event}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIGraphics_a518da08bf862f7f4ccc15d716313e9f7}{get\+Game\+Name}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{classIGraphics_a7323891f99491df152d53827952cba5c}{get\+Lib\+Name}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classIGraphics_a7a9e955878c0fd9e06f50515e1b0e5e1}{set\+Game\+Name}} (std\+::string name)=0
+\item 
+virtual void \mbox{\hyperlink{classIGraphics_ad42f092c834a26cd40102898ea8913de}{set\+Lib\+Name}} (std\+::string name)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGraphics_ae26714d485d834cdccc8d87aab7ddf59}\label{classGraphics_ae26714d485d834cdccc8d87aab7ddf59}} 
+\index{Graphics@{Graphics}!````~Graphics@{$\sim$Graphics}}
+\index{````~Graphics@{$\sim$Graphics}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{$\sim$Graphics()}{~Graphics()}}
+{\footnotesize\ttfamily virtual Graphics\+::$\sim$\+Graphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGraphics_a32fb1a496cf23cf6f45609718c5d299c}\label{classGraphics_a32fb1a496cf23cf6f45609718c5d299c}} 
+\index{Graphics@{Graphics}!display@{display}}
+\index{display@{display}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily virtual void Graphics\+::display (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+S\textquotesingle{}occupe d\textquotesingle{}interpréter la frame reçue depuis \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{IGames\+::get\+Frame()}} et de l\textquotesingle{}afficher correctement 
+\begin{DoxyParams}{Paramètres}
+{\em frame} & La frame envoyée par \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{IGames\+::get\+Frame()}} \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \mbox{\hyperlink{classIGraphics_ae38528555acb87085144e9b27d154cf8}{IGraphics}}.
+
+
+
+Implémenté dans \mbox{\hyperlink{classNCursesModule_aa22c07f529081d840276a8ecf7294c68}{NCurses\+Module}}, \mbox{\hyperlink{classSDLModule_a5121ca2d77398a3709b02266ca6eae44}{SDLModule}}, et \mbox{\hyperlink{classSFMLModule_a01bf6747e7438baaf7848edb68a5d4a2}{SFMLModule}}.
+
+\mbox{\Hypertarget{classGraphics_aa08ffbfb3bfccb355446f3203d449456}\label{classGraphics_aa08ffbfb3bfccb355446f3203d449456}} 
+\index{Graphics@{Graphics}!getEvent@{getEvent}}
+\index{getEvent@{getEvent}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{getEvent()}{getEvent()}}
+{\footnotesize\ttfamily virtual int Graphics\+::get\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Interprète l\textquotesingle{}évenement du joueur et le retourne avec la table dans \mbox{\hyperlink{events_8hpp}{events.\+hpp}} 
+\begin{DoxyParams}{Paramètres}
+{\em frame} & La frame envoyée par \mbox{\hyperlink{classIGames_a09ad3ccb5a88d044df833645581e0333}{IGames\+::get\+Frame()}} \\
+\hline
+\end{DoxyParams}
+
+
+Implémente \mbox{\hyperlink{classIGraphics_aedb2667f2f41530113957f758c2e5f9d}{IGraphics}}.
+
+
+
+Implémenté dans \mbox{\hyperlink{classNCursesModule_ae7a2736953037e3f9f91c6bfbc5289e4}{NCurses\+Module}}, \mbox{\hyperlink{classSDLModule_a4e8e0a73e96dfde9c4442bc8b5d1f098}{SDLModule}}, et \mbox{\hyperlink{classSFMLModule_a6e80ceb109501958f70b2b3abf5667a8}{SFMLModule}}.
+
+\mbox{\Hypertarget{classGraphics_a4ecf4a382e0ff6f5d86b95efdb9af0ac}\label{classGraphics_a4ecf4a382e0ff6f5d86b95efdb9af0ac}} 
+\index{Graphics@{Graphics}!getGameName@{getGameName}}
+\index{getGameName@{getGameName}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{getGameName()}{getGameName()}}
+{\footnotesize\ttfamily std\+::string Graphics\+::get\+Game\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Renvoie le nom du jeu qui doit être joué. Sous forme\+: \char`\"{}arcade\+\_\+nom\char`\"{} (Ex\+: arcade\+\_\+snake), le core le récupère pour charger la lib en ajoutant \char`\"{}./lib/\char`\"{} et \char`\"{}.\+so\char`\"{} 
+
+Implémente \mbox{\hyperlink{classIGraphics_a518da08bf862f7f4ccc15d716313e9f7}{IGraphics}}.
+
+\mbox{\Hypertarget{classGraphics_a514f98cf161f8d5698fadd0c5c00f918}\label{classGraphics_a514f98cf161f8d5698fadd0c5c00f918}} 
+\index{Graphics@{Graphics}!getLibName@{getLibName}}
+\index{getLibName@{getLibName}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{getLibName()}{getLibName()}}
+{\footnotesize\ttfamily std\+::string Graphics\+::get\+Lib\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Renvoie le nom de la lib graphique qui doit tourner. Sour forme\+: \char`\"{}arcade\+\_\+nom\char`\"{}, le core le récupère pour charger la lib en ajoutant \char`\"{}./lib/\char`\"{} et \char`\"{}.\+so\char`\"{} 
+
+Implémente \mbox{\hyperlink{classIGraphics_a7323891f99491df152d53827952cba5c}{IGraphics}}.
+
+\mbox{\Hypertarget{classGraphics_ae1a6c5ce7d367a908936e5cfc3eb7b59}\label{classGraphics_ae1a6c5ce7d367a908936e5cfc3eb7b59}} 
+\index{Graphics@{Graphics}!setGameName@{setGameName}}
+\index{setGameName@{setGameName}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{setGameName()}{setGameName()}}
+{\footnotesize\ttfamily void Graphics\+::set\+Game\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Assigne un jeu à jouer sous forme\+: \char`\"{}arcade\+\_\+nom\char`\"{} 
+
+Implémente \mbox{\hyperlink{classIGraphics_a7a9e955878c0fd9e06f50515e1b0e5e1}{IGraphics}}.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 2
+\mbox{\Hypertarget{classGraphics_a5c1ceb143ec8a89293afd1561ee1c9c3}\label{classGraphics_a5c1ceb143ec8a89293afd1561ee1c9c3}} 
+\index{Graphics@{Graphics}!setLibName@{setLibName}}
+\index{setLibName@{setLibName}!Graphics@{Graphics}}
+\doxysubsubsection{\texorpdfstring{setLibName()}{setLibName()}}
+{\footnotesize\ttfamily void Graphics\+::set\+Lib\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Assigne la lib graphique qui doit tourner sous forme\+: \char`\"{}arcade\+\_\+nom\char`\"{} 
+
+Implémente \mbox{\hyperlink{classIGraphics_ad42f092c834a26cd40102898ea8913de}{IGraphics}}.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 3
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Graphics_8hpp}{Graphics.\+hpp}}\item 
+src/\+Modules/\mbox{\hyperlink{Graphics_8cpp}{Graphics.\+cpp}}\end{DoxyCompactItemize}

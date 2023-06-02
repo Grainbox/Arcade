@@ -1,0 +1,10 @@
+<map id="src/Modules/Graphics/NCursesModule.cpp" name="src/Modules/Graphics/NCursesModule.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="121,5,282,45"/>
+<area shape="rect" id="node2" href="$NCursesModule_8hpp.html" title="Ce fichier implémente la lib graphoique Ncurses." alt="" coords="125,93,277,119"/>
+<area shape="rect" id="node3" href="$Graphics_8hpp.html" title=" " alt="" coords="88,167,195,192"/>
+<area shape="rect" id="node8" title=" " alt="" coords="219,167,303,192"/>
+<area shape="rect" id="node4" href="$IGraphics_8hpp.html" title=" " alt="" coords="86,240,197,265"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,313,85,339"/>
+<area shape="rect" id="node6" title=" " alt="" coords="110,313,173,339"/>
+<area shape="rect" id="node7" href="$events_8hpp.html" title="Ce fichier contient les définitions des différents events reçus par les librairies graphiques." alt="" coords="197,313,291,339"/>
+</map>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Arcade:  Fichier source de include/Modules/Graphics/SFMLModule.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Arcade
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_c2973f5af505654d03cbcef66713891e.html">Modules</a></li><li class="navelem"><a class="el" href="dir_efaece42867ae57a24b23ddd91005394.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">SFMLModule.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="SFMLModule_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">** EPITECH PROJECT, 2023</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** B-OOP-400-REN-4-1-arcade-hugo1.fontaine</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** SFMLModule</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef SFMLMODULE_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define SFMLMODULE_HPP_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    #include &quot;<a class="code" href="Graphics_8hpp.html">Graphics.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">    #include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">    #include &lt;SFML/Window.hpp&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    #include &lt;SFML/System.hpp&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">    #include &lt;SFML/Graphics/Color.hpp&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classSFMLModule.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classSFMLModule.html">SFMLModule</a> : <span class="keyword">public</span> <a class="code hl_class" href="classGraphics.html">Graphics</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_function" href="classSFMLModule.html#a6beecca2c0d6f3160d74f90a918ca011">SFMLModule</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_function" href="classSFMLModule.html#a0f9f01358a9e3f909d6ba59f35f4587f">~SFMLModule</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSFMLModule.html#a01bf6747e7438baaf7848edb68a5d4a2">display</a>(std::vector&lt;std::string&gt; frame);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classSFMLModule.html#a6e80ceb109501958f70b2b3abf5667a8">getEvent</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSFMLModule.html#a00d7787bda0d71d9422e55cecb6c6d34">initRectangle</a> ();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classSFMLModule.html#abd8f935b2c449c20919445ab90813daa">   30</a></span>        std::vector&lt;sf::RectangleShape&gt; <a class="code hl_function" href="classSFMLModule.html#abd8f935b2c449c20919445ab90813daa">getRectangle</a>() { <span class="keywordflow">return</span> rectangles; };</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classSFMLModule.html#ac931ea737fd4471e5e53085f5a3e924e">   31</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSFMLModule.html#ac931ea737fd4471e5e53085f5a3e924e">key_handler</a>(sf::RenderWindow *<a class="code hl_variable" href="classSFMLModule.html#a9d4b469492db3a6e8a6a90c1f2398608">_window</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSFMLModule.html#ae7bb1e91595d160b931304183748d1de">setStat</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classSFMLModule.html#aee48db3d24ac3ba7e42c39c191a66743">   33</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#aee48db3d24ac3ba7e42c39c191a66743">wall</a> = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classSFMLModule.html#a7e9c177f0f58516bf1f5ae1e1401df7e">   34</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#a7e9c177f0f58516bf1f5ae1e1401df7e">player</a> = 0;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classSFMLModule.html#ab859c47a34f52baddaff31bf235ee68f">   35</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#ab859c47a34f52baddaff31bf235ee68f">Door</a> = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classSFMLModule.html#a24e4701f75c78dd850210872b5dfb19c">   36</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#a24e4701f75c78dd850210872b5dfb19c">Portail</a> = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classSFMLModule.html#aaca3335ef5dec0b907aa5d2ade32f383">   37</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#aaca3335ef5dec0b907aa5d2ade32f383">Ghost</a> = 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classSFMLModule.html#acff27b4c16c9659ed8cb89374d421285">   38</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#acff27b4c16c9659ed8cb89374d421285">point</a> = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classSFMLModule.html#ad4d7f6f50f7f75f92b63385d8e784140">   39</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#ad4d7f6f50f7f75f92b63385d8e784140">BigPoint</a> = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classSFMLModule.html#a7a80d4e64bd3f1f389ab5211e318a7fe">   40</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classSFMLModule.html#a7a80d4e64bd3f1f389ab5211e318a7fe">Fruit</a> = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classSFMLModule.html#a9d4b469492db3a6e8a6a90c1f2398608">   41</a></span>        sf::RenderWindow *<a class="code hl_variable" href="classSFMLModule.html#a9d4b469492db3a6e8a6a90c1f2398608">_window</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            std::vector&lt;std::string&gt; map;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            std::vector&lt;sf::RectangleShape&gt; rectangles;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">/* !SFMLMODULE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aGraphics_8hpp_html"><div class="ttname"><a href="Graphics_8hpp.html">Graphics.hpp</a></div></div>
+<div class="ttc" id="aclassGraphics_html"><div class="ttname"><a href="classGraphics.html">Graphics</a></div><div class="ttdef"><b>Definition:</b> Graphics.hpp:13</div></div>
+<div class="ttc" id="aclassSFMLModule_html"><div class="ttname"><a href="classSFMLModule.html">SFMLModule</a></div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:22</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a00d7787bda0d71d9422e55cecb6c6d34"><div class="ttname"><a href="classSFMLModule.html#a00d7787bda0d71d9422e55cecb6c6d34">SFMLModule::initRectangle</a></div><div class="ttdeci">void initRectangle()</div><div class="ttdef"><b>Definition:</b> SFMLModule.cpp:68</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a01bf6747e7438baaf7848edb68a5d4a2"><div class="ttname"><a href="classSFMLModule.html#a01bf6747e7438baaf7848edb68a5d4a2">SFMLModule::display</a></div><div class="ttdeci">void display(std::vector&lt; std::string &gt; frame)</div><div class="ttdef"><b>Definition:</b> SFMLModule.cpp:102</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a0f9f01358a9e3f909d6ba59f35f4587f"><div class="ttname"><a href="classSFMLModule.html#a0f9f01358a9e3f909d6ba59f35f4587f">SFMLModule::~SFMLModule</a></div><div class="ttdeci">~SFMLModule()</div><div class="ttdef"><b>Definition:</b> SFMLModule.cpp:28</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a24e4701f75c78dd850210872b5dfb19c"><div class="ttname"><a href="classSFMLModule.html#a24e4701f75c78dd850210872b5dfb19c">SFMLModule::Portail</a></div><div class="ttdeci">int Portail</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:36</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a6beecca2c0d6f3160d74f90a918ca011"><div class="ttname"><a href="classSFMLModule.html#a6beecca2c0d6f3160d74f90a918ca011">SFMLModule::SFMLModule</a></div><div class="ttdeci">SFMLModule()</div><div class="ttdef"><b>Definition:</b> SFMLModule.cpp:22</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a6e80ceb109501958f70b2b3abf5667a8"><div class="ttname"><a href="classSFMLModule.html#a6e80ceb109501958f70b2b3abf5667a8">SFMLModule::getEvent</a></div><div class="ttdeci">int getEvent()</div><div class="ttdef"><b>Definition:</b> SFMLModule.cpp:119</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a7a80d4e64bd3f1f389ab5211e318a7fe"><div class="ttname"><a href="classSFMLModule.html#a7a80d4e64bd3f1f389ab5211e318a7fe">SFMLModule::Fruit</a></div><div class="ttdeci">int Fruit</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:40</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a7e9c177f0f58516bf1f5ae1e1401df7e"><div class="ttname"><a href="classSFMLModule.html#a7e9c177f0f58516bf1f5ae1e1401df7e">SFMLModule::player</a></div><div class="ttdeci">int player</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:34</div></div>
+<div class="ttc" id="aclassSFMLModule_html_a9d4b469492db3a6e8a6a90c1f2398608"><div class="ttname"><a href="classSFMLModule.html#a9d4b469492db3a6e8a6a90c1f2398608">SFMLModule::_window</a></div><div class="ttdeci">sf::RenderWindow * _window</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:41</div></div>
+<div class="ttc" id="aclassSFMLModule_html_aaca3335ef5dec0b907aa5d2ade32f383"><div class="ttname"><a href="classSFMLModule.html#aaca3335ef5dec0b907aa5d2ade32f383">SFMLModule::Ghost</a></div><div class="ttdeci">int Ghost</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:37</div></div>
+<div class="ttc" id="aclassSFMLModule_html_ab859c47a34f52baddaff31bf235ee68f"><div class="ttname"><a href="classSFMLModule.html#ab859c47a34f52baddaff31bf235ee68f">SFMLModule::Door</a></div><div class="ttdeci">int Door</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:35</div></div>
+<div class="ttc" id="aclassSFMLModule_html_abd8f935b2c449c20919445ab90813daa"><div class="ttname"><a href="classSFMLModule.html#abd8f935b2c449c20919445ab90813daa">SFMLModule::getRectangle</a></div><div class="ttdeci">std::vector&lt; sf::RectangleShape &gt; getRectangle()</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:30</div></div>
+<div class="ttc" id="aclassSFMLModule_html_ac931ea737fd4471e5e53085f5a3e924e"><div class="ttname"><a href="classSFMLModule.html#ac931ea737fd4471e5e53085f5a3e924e">SFMLModule::key_handler</a></div><div class="ttdeci">void key_handler(sf::RenderWindow *_window)</div></div>
+<div class="ttc" id="aclassSFMLModule_html_acff27b4c16c9659ed8cb89374d421285"><div class="ttname"><a href="classSFMLModule.html#acff27b4c16c9659ed8cb89374d421285">SFMLModule::point</a></div><div class="ttdeci">int point</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:38</div></div>
+<div class="ttc" id="aclassSFMLModule_html_ad4d7f6f50f7f75f92b63385d8e784140"><div class="ttname"><a href="classSFMLModule.html#ad4d7f6f50f7f75f92b63385d8e784140">SFMLModule::BigPoint</a></div><div class="ttdeci">int BigPoint</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:39</div></div>
+<div class="ttc" id="aclassSFMLModule_html_ae7bb1e91595d160b931304183748d1de"><div class="ttname"><a href="classSFMLModule.html#ae7bb1e91595d160b931304183748d1de">SFMLModule::setStat</a></div><div class="ttdeci">void setStat()</div><div class="ttdef"><b>Definition:</b> SFMLModule.cpp:35</div></div>
+<div class="ttc" id="aclassSFMLModule_html_aee48db3d24ac3ba7e42c39c191a66743"><div class="ttname"><a href="classSFMLModule.html#aee48db3d24ac3ba7e42c39c191a66743">SFMLModule::wall</a></div><div class="ttdeci">int wall</div><div class="ttdef"><b>Definition:</b> SFMLModule.hpp:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<map id="src/main.cpp" name="src/main.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="498,5,603,31"/>
+<area shape="rect" id="node2" href="$Arcade_8hpp.html" title="Ce fichier est le &#39;core&#39; de l&#39;arcade, c&#39;est lui qui fait la jointure entre IGraphics et IGames." alt="" coords="431,79,526,104"/>
+<area shape="rect" id="node14" href="$ErrorHandling_8hpp.html" title="Ce fichier contient l&#39;handling des arguments d&#39;entrée." alt="" coords="677,225,816,251"/>
+<area shape="rect" id="node3" title=" " alt="" coords="393,299,473,324"/>
+<area shape="rect" id="node4" href="$IGraphics_8hpp.html" title=" " alt="" coords="491,225,602,251"/>
+<area shape="rect" id="node6" href="$events_8hpp.html" title="Ce fichier contient les définitions des différents events reçus par les librairies graphiques." alt="" coords="498,299,593,324"/>
+<area shape="rect" id="node7" href="$IGames_8hpp.html" title=" " alt="" coords="174,225,274,251"/>
+<area shape="rect" id="node12" href="$DLLoader_8hpp.html" title="Ce fichier est l&#39;encapsulation de &lt;dlfcn.h&gt; en C." alt="" coords="305,152,415,177"/>
+<area shape="rect" id="node5" title=" " alt="" coords="617,299,679,324"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,299,72,324"/>
+<area shape="rect" id="node9" title=" " alt="" coords="97,299,167,324"/>
+<area shape="rect" id="node10" title=" " alt="" coords="192,299,259,324"/>
+<area shape="rect" id="node11" title=" " alt="" coords="283,299,367,324"/>
+<area shape="rect" id="node13" title=" " alt="" coords="349,225,416,251"/>
+<area shape="rect" id="node15" title=" " alt="" coords="902,299,989,324"/>
+<area shape="rect" id="node16" title=" " alt="" coords="704,299,763,324"/>
+<area shape="rect" id="node17" title=" " alt="" coords="787,299,877,324"/>
+</map>

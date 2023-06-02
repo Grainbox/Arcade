@@ -1,0 +1,26 @@
+digraph "Arcade::Arcade"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="Arcade::Arcade",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="IGraphics::display",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classIGraphics.html#ae38528555acb87085144e9b27d154cf8",tooltip=" "];
+  Node1 -> Node3 [color="steelblue1",style="solid"];
+  Node3 [label="IGames::eventHandler",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classIGames.html#ae75c32be13283a7c31de502014ffdf6e",tooltip=" "];
+  Node1 -> Node4 [color="steelblue1",style="solid"];
+  Node4 [label="IGraphics::getEvent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classIGraphics.html#aedb2667f2f41530113957f758c2e5f9d",tooltip=" "];
+  Node1 -> Node5 [color="steelblue1",style="solid"];
+  Node5 [label="IGames::getFrame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classIGames.html#a09ad3ccb5a88d044df833645581e0333",tooltip=" "];
+  Node1 -> Node6 [color="steelblue1",style="solid"];
+  Node6 [label="IGraphics::getGameName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classIGraphics.html#a518da08bf862f7f4ccc15d716313e9f7",tooltip=" "];
+  Node1 -> Node7 [color="steelblue1",style="solid"];
+  Node7 [label="Arcade::loadGame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classArcade.html#a6bf1c6af608ef61ff1c0bfb82046c3e9",tooltip=" "];
+  Node7 -> Node8 [color="steelblue1",style="solid"];
+  Node8 [label="DLLoader::getInstance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classDLLoader.html#a8e7744ea44c22b091837503731fd49e9",tooltip=" "];
+  Node1 -> Node9 [color="steelblue1",style="solid"];
+  Node9 [label="Arcade::loadGraphic",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classArcade.html#a3a80a76ad9108debc160bd86a7e21a22",tooltip=" "];
+  Node9 -> Node8 [color="steelblue1",style="solid"];
+}
